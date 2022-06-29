@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HZC - Home</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<header class="cabecalho">
+		<!-- tag <i></i>: Essa tag é para indicar que você vai colocar um ícone dentro dela.-->
+		<!-- aria-label: Usado para colocar informação em ícones. -->
+		<button class="cabecalho__menu" aria-label="Menu"><i></i></button>
+		<img src="img/logo.svg" alt="Logotipo HZC" class="cabecalho__logo">
+		<button class="cabecalho__notificacao" aria-label="Notificação"><i></i></button>
+	</header>
+
+	<nav class="menu-lateral">
+		<img src="img/logo.svg" class="menu-lateral__logo">
+			<a href="#" class="menu-lateral__link menu-lateral__link--inicio menu-lateral__link--ativo">Ínicio</a>
+			<a href="#" class="menu-lateral__link menu-lateral__link--video menu-lateral__link--ativo">Vídeos</a>
+			<a href="#" class="menu-lateral__link menu-lateral__link--picos menu-lateral__link--ativo">Picos</a>
+			<a href="#" class="menu-lateral__link menu-lateral__link--integrantes menu-lateral__link--ativo">Integrantes</a>
+			<a href="#" class="menu-lateral__link menu-lateral__link--camisas menu-lateral__link--ativo">Camisas</a>
+			<a href="#" class="menu-lateral__link menu-lateral__link--pinturas menu-lateral__link--ativo">Pinturas</a>
+	</nav>
+	<main class="principal">
+		<article class="cartao">
+			<img src="img/banner-mobile_1.png" class="cartao__imagem" alt="banner do mobile">
+			<div class="cartao__conteudo">
+				<h3 class="cartao__destaque">Destaques</h3>
+				<p class="cartao__titulo">Titulo</p>
+				<p class="cartao__perfil">Bruno Lopez</p>
+				<p class="cartao__info cartao__info--tempo">Duração</p>
+				<p class="cartao__info cartao__info--visualizacao">Visualizações</p>
+				<button class="cartao__botao cartao__botao--play cartao__botao--destaque">Assistir agora</button>
+			</div>
+		</article>
+	</main>
+	<script src="index.js"></script>
+</body>
+</html>
