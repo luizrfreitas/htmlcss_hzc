@@ -1,0 +1,145 @@
+.cabecalho {
+    background-color: var(--cabecalho-mobile);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: .8em 1.2em;
+    align-items: center;
+}
+
+.cabecalho__botao {
+    font-size: 2em;
+}
+
+.menu::before {
+    content: "\e904";
+}
+
+.sino::before {
+    content: "\e906";
+}
+
+.cabecalho__logo {
+    width: 3em;
+}
+
+.menu-lateral {
+    display: none;
+}
+
+
+
+@media screen and (min-width: 1440px) {
+    .cabecalho {
+        background-color: var(--cabecalho-desktop);
+        padding: 1em;
+        display: flex;
+        justify-content: flex-end;
+
+        grid-column: 2;
+    }
+
+    .menu-lateral {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        background-color: var(--menu-lateral);
+
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        padding: 1em;
+    }
+
+    .cabecalho__perfil {
+        font-weight: 400;
+        line-height: 32px;
+        color: var(--cinza-texto);
+        margin: 0 2em;
+        display: flex;
+        justify-content: center;
+    }
+
+    .cabecalho__perfil::after {
+        content: "\e90d";
+        color: #FFFFFF;
+        font-size: 1.5rem;
+    }
+
+    .cabecalho__perfil::before {
+        content: "";
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        background-image: url(../img/profile_2.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-right: 14px;
+    }
+
+    .sino {
+        border-left: 1px solid var(--branco);
+        padding-left: 1em;
+    }
+
+    .menu {
+        display: none;
+    }
+
+
+    .cabecalho__logo {
+        display: none;
+    }
+
+
+    .menu-lateral__logo {
+        width: 120px;
+        padding: 1em 2em;
+    }
+
+    .menu-lateral__lista {
+        padding: 1em 1em;
+    }
+
+    .lista__item {
+        font-weight: 400;
+        line-height: 32px;
+        padding: 1em 0;
+    }
+
+    .inicio::before {
+        content: "\e902";
+        padding-right: 12px;
+        font-size: 20px;
+    }
+
+    .videos::before {
+        content: "\e90e";
+        padding-right: 12px;
+        font-size: 20px;
+    }
+
+    .picos::before {
+        content: "\e909";
+        padding-right: 12px;
+        font-size: 20px;
+    }
+
+    .integrantes::before {
+        content: "\e903";
+        padding-right: 12px;
+        font-size: 20px;
+    }
+
+    .camisas::before {
+        content: "\e900";
+        padding-right: 12px;
+        font-size: 20px;
+    }
+
+    .pinturas::before {
+        content: "\e90a";
+        padding-right: 12px;
+        font-size: 20px;
+    }
+}
