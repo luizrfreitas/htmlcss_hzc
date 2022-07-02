@@ -1,0 +1,36 @@
+@import url("css/header.css");
+@import url("css/cards.css");
+
+
+@font-face {
+    font-family: 'icones';
+    src: url("font/icones.ttf");
+}
+
+
+:root {
+
+    --branco: #FFFFFF;
+    --backgrond: #1D232A;
+    --cabecalho-mobile: #15191C;
+    --cartao: #2C343A;
+    --cinza-texto: #95999C;
+    --botao: #0480DC;
+    --menu-lateral: #15191C;
+    --cabecalho-desktop: #1D232A;
+    
+}
+
+body {
+    font-family: 'Open Sans', 'icones', sans-serif;
+    color: var(--branco);
+    background-color: var(--backgrond);
+    font-size: 16px;
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+}
