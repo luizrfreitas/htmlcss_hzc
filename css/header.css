@@ -27,7 +27,60 @@
     display: none;
 }
 
+.menu-lateral__logo {
+    width: 120px;
+    padding: 1em 2em;
+}
 
+.menu-lateral__lista {
+    padding: 1em 1em;
+}
+
+.lista__item {
+    font-weight: 400;
+    line-height: 32px;
+    padding: 1em 0;
+}
+
+.inicio::before {
+    content: "\e902";
+    padding-right: 12px;
+    font-size: 20px;
+}
+
+.videos::before {
+    content: "\e90e";
+    padding-right: 12px;
+    font-size: 20px;
+}
+
+.picos::before {
+    content: "\e909";
+    padding-right: 12px;
+    font-size: 20px;
+}
+
+.integrantes::before {
+    content: "\e903";
+    padding-right: 12px;
+    font-size: 20px;
+}
+
+.camisas::before {
+    content: "\e900";
+    padding-right: 12px;
+    font-size: 20px;
+}
+
+.pinturas::before {
+    content: "\e90a";
+    padding-right: 12px;
+    font-size: 20px;
+}
+
+.cabecalho__perfil {
+    display: none;
+}
 
 @media screen and (min-width: 1440px) {
     .cabecalho {
@@ -35,7 +88,6 @@
         padding: 1em;
         display: flex;
         justify-content: flex-end;
-
         grid-column: 2;
     }
 
@@ -92,54 +144,5 @@
     }
 
 
-    .menu-lateral__logo {
-        width: 120px;
-        padding: 1em 2em;
-    }
-
-    .menu-lateral__lista {
-        padding: 1em 1em;
-    }
-
-    .lista__item {
-        font-weight: 400;
-        line-height: 32px;
-        padding: 1em 0;
-    }
-
-    .inicio::before {
-        content: "\e902";
-        padding-right: 12px;
-        font-size: 20px;
-    }
-
-    .videos::before {
-        content: "\e90e";
-        padding-right: 12px;
-        font-size: 20px;
-    }
-
-    .picos::before {
-        content: "\e909";
-        padding-right: 12px;
-        font-size: 20px;
-    }
-
-    .integrantes::before {
-        content: "\e903";
-        padding-right: 12px;
-        font-size: 20px;
-    }
-
-    .camisas::before {
-        content: "\e900";
-        padding-right: 12px;
-        font-size: 20px;
-    }
-
-    .pinturas::before {
-        content: "\e90a";
-        padding-right: 12px;
-        font-size: 20px;
-    }
+    
 }

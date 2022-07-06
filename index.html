@@ -20,7 +20,7 @@
         <i class="cabecalho__perfil">Bruno Lopes</i>
         <button class="cabecalho__botao sino" aria-label="Botão Notificações"><i></i></button>
     </header>
-    <nav class="menu-lateral">
+    <nav class="menu-lateral menu-lateral-1">
         <img src="img/logo.svg" alt="Logo" class="menu-lateral__logo">
         <ul class="menu-lateral__lista">
             <li class="lista__item inicio icon"><i class="lista__link">Início</i></li>
@@ -33,9 +33,10 @@
     </nav>
     <main class="principal">
         <section class="cards">
-            <h1 class="titulo-principal titulo-1">Ínicio</h1>
-            <article class="cards__destaque card-destaque-1">
-                <img src="img/banner-mobile_1.png" alt="Banner em Destaque" class="card__imagem">
+            <h1 class="titulo-principal grid-titulo">Ínicio</h1>
+            <article class="cards__destaque grid-destaque">
+                <img src="img/banner-mobile_1.png" alt="Banner em Destaque" class="card__imagem card__imagem--mobile">
+                <img src="img/banner_1.png" alt="Banner Desktop" class="card__imagem--desktop">
                 <div class="card__descrição">
                     <h4>Vídeo em destaque</h4>
                     <h3>HZC - Life is... / 2021</h3>
@@ -45,7 +46,7 @@
                     <button class="destaque__botao botao play"><i>Assistir Agora</i></button>
                 </div>
             </article>
-            <section class="videos-recentes videos-recentes-1">
+            <section class="videos-recentes grid-recentes">
                 <h3>Vídeos Recentes</h3>
                 <i class="videos-recentes__ver-todos">Ver todos</i>
                 <ul class="videos-recentes__lista">
@@ -71,7 +72,7 @@
                     </li>
                 </ul>
             </section>
-            <h2 class="sub-titulo sub-titulo-1">Vídeos mais vistos</h2>
+            <h2 class="sub-titulo grid-sub-titulo">Vídeos mais vistos</h2>
             <div class="outros-cartoes">
                 <article class="card__padrao">                
                     <img src="img/video_1.png" alt="Video" class="card__imagem">
@@ -113,58 +114,89 @@
                     </div>
                 </article>
             </div>
-            
         </section>
         <section class="cards">
-            <h2 class="cards__titulo"></h2>
-            <article class="cards__destaque">
-                <img src="img/banner-mobile_2.png" alt="Banner em Destaque" class="card__imagem">
-                <div class="card__descrição">
-                    <h4>Nova arte</h4>
-                    <h3>Only Zikas - Lagoa Dompa Club</h3>
-                    <p class="card__autor">Bruno Lopes</p>
-                    <p class="card__info dinheiro">33,00</p>
-                    <p class="card__info visualizações">53 visualizações</p>
-                    <button class="destaque__botao botao carrinho"><i>Comprar Agora</i></button>
+            <div class="segunda-area">
+                <h2 class="cards__titulo segunda-area-titulo">Camisas</h2>
+                <article class="cards__destaque segunda-area-destaque">
+                    <img src="img/banner-mobile_2.png" alt="Banner em Destaque" class="card__imagem card-imagem-mobile-2">
+                    <img src="img/banner_2.png" alt="banner camisas desktop" class="card__imagem--desktop-2">
+                    <div class="card__descrição">
+                        <h4>Nova arte</h4>
+                        <h3>Only Zikas - Lagoa Dompa Club</h3>
+                        <p class="card__autor">Bruno Lopes</p>
+                        <p class="card__info dinheiro">33,00</p>
+                        <p class="card__info visualizações">53 visualizações</p>
+                        <button class="destaque__botao botao carrinho"><i>Comprar Agora</i></button>
+                    </div>
+                </article>
+                <section class="videos-recentes grid-recentes segunda-area-recentes">
+                    <h3>Vídeos Recentes</h3>
+                    <i class="videos-recentes__ver-todos">Ver todos</i>
+                    <ul class="videos-recentes__lista">
+                        <li class="videos-recentes__item">
+                            <i class="videos-recentes__link">HZC - Love Machine</i>
+                            <p class="videos-recentes__autor">Júlia Fonseca</p>
+                        </li>
+                        <li class="videos-recentes__item">
+                            <i class="videos-recentes__link">HZC - Love Machine</i>
+                            <p class="videos-recentes__autor">Júlia Fonseca</p>
+                        </li>
+                        <li class="videos-recentes__item">
+                            <i class="videos-recentes__link">HZC - Love Machine</i>
+                            <p class="videos-recentes__autor">Júlia Fonseca</p>
+                        </li>
+                        <li class="videos-recentes__item">
+                            <i class="videos-recentes__link">HZC - Love Machine</i>
+                            <p class="videos-recentes__autor">Júlia Fonseca</p>
+                        </li>
+                        <li class="videos-recentes__item">
+                            <i class="videos-recentes__link">HZC - Love Machine</i>
+                            <p class="videos-recentes__autor">Júlia Fonseca</p>
+                        </li>
+                    </ul>
+                </section>
+                <h2 class="sub-titulo segunda-area-sub-titulo">Camisas mais recentes</h2>
+                <div class="segunda-area-cartoes">
+                    <article class="card__padrao">
+                        <img src="img/produto_1.png" alt="Video" class="card__imagem">
+                        <div class="card__descrição">
+                            <p class="card__autor">André Soares</p>
+                            <h3>IBM</h3>
+                            <p class="card__info dinheiro">33,00</p>
+                            <button class="botao carrinho"><i></i></button>
+                        </div>
+                    </article>
+                    <article class="card__padrao">
+                        <img src="img/produto_2.png" alt="Video" class="card__imagem">
+                        <div class="card__descrição">
+                            <p class="card__autor">Bruno Lopes</p>
+                            <h3>Huflez Crew Philosophy Club</h3>
+                            <p class="card__info dinheiro">33,00</p>
+                            <button class="botao carrinho"><i></i></button>
+                        </div>
+                    </article>
+                    <article class="card__padrao">
+                        <img src="img/produto_3.png" alt="Video" class="card__imagem">
+                        <div class="card__descrição">
+                            <p class="card__autor">Luiza Sampaio</p>
+                            <h3>Corujita noturna</h3>
+                            <p class="card__info dinheiro">33,00</p>
+                            <button class="botao carrinho"><i></i></button>
+                        </div>
+                    </article>
+                    <article class="card__padrao">
+                        <img src="img/produto_4.png" alt="Video" class="card__imagem">
+                        <div class="card__descrição">
+                            <p class="card__autor">Bruno Lopes</p>
+                            <h3>GGG - Gatin G Gorro</h3>
+                            <p class="card__info dinheiro">33,00</p>
+                            <button class="botao carrinho"><i></i></button>
+                        </div>
+                    </article>
                 </div>
-            </article>
-            <h2 class="sub-titulo">Camisas mais recentes</h2>
-            <article class="card__padrao">
-                <img src="img/produto_1.png" alt="Video" class="card__imagem">
-                <div class="card__descrição">
-                    <p class="card__autor">André Soares</p>
-                    <h3>IBM</h3>
-                    <p class="card__info dinheiro">33,00</p>
-                    <button class="botao carrinho"><i></i></button>
-                </div>
-            </article>
-            <article class="card__padrao">
-                <img src="img/produto_2.png" alt="Video" class="card__imagem">
-                <div class="card__descrição">
-                    <p class="card__autor">Bruno Lopes</p>
-                    <h3>Huflez Crew Philosophy Club</h3>
-                    <p class="card__info dinheiro">33,00</p>
-                    <button class="botao carrinho"><i></i></button>
-                </div>
-            </article>
-            <article class="card__padrao">
-                <img src="img/produto_3.png" alt="Video" class="card__imagem">
-                <div class="card__descrição">
-                    <p class="card__autor">Luiza Sampaio</p>
-                    <h3>Corujita noturna</h3>
-                    <p class="card__info dinheiro">33,00</p>
-                    <button class="botao carrinho"><i></i></button>
-                </div>
-            </article>
-            <article class="card__padrao">
-                <img src="img/produto_4.png" alt="Video" class="card__imagem">
-                <div class="card__descrição">
-                    <p class="card__autor">Bruno Lopes</p>
-                    <h3>GGG - Gatin G Gorro</h3>
-                    <p class="card__info dinheiro">33,00</p>
-                    <button class="botao carrinho"><i></i></button>
-                </div>
-            </article>
+                
+            </div>
         </section>
     </main>
     
