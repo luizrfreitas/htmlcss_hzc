@@ -265,6 +265,7 @@
         display: flex;
         justify-content: space-evenly;
         max-width: 70vw;
+        gap: 24px;
     }
 }
 
